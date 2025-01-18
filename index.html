@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <template id="progress_template">
+        <div class="bar">
+          <div class="progress-bar"></div>
+          <div class="options">
+            <div class="option">
+              <input class="input_number" type="number" max="100" min="0" maxlength="3"/>
+              <label>Value</label>
+            </div>
+            <div class="option">
+              <input class="input_checkbox input_animate" type="checkbox" />
+              <div class="slider"></div>
+              <label>Animate</label>
+            </div>
+            <div class="option">
+              <input class="input_checkbox input_hide" type="checkbox" />
+              <div class="slider"></div>
+              <label>Hide</label>
+            </div>
+          </div>
+        </ul>
+      </div>
+      </template>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

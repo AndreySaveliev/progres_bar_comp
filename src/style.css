@@ -1,0 +1,89 @@
+.bar {
+  width: min-content;
+}
+
+.progress-bar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(hotpink 25%, pink 0);
+}
+
+.input_number {
+  width: 30px;
+  height: 20px;
+  border-radius: 12px;
+  outline: none;
+  border: 1px solid black;
+}
+
+.input_checkbox {
+  width: 30px;
+  height: 20px;
+  opacity: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.slider {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 12px;
+  border: 2px solid #ccc;
+}
+
+.slider::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  background: red;
+}
+
+.input_checkbox:checked ~ .slider::after {
+  right: 0px;
+  background: green;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.option {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+}
+
+@media screen and (orientation: portrait) {
+}
+
+/* For landscape, we want the toolbar stick on the left */
+
+@media screen and (orientation: landscape) {
+  .bar {
+    display: flex;
+    flex-direction: row;
+  }
+}
