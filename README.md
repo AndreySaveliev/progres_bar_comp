@@ -1,6 +1,6 @@
 # Круговой индикатор прогресса
 
-![Внешний вид компонента](1_screen.png)
+![Внешний вид компонента](https://github.com/AndreySaveliev/progres_bar_comp/blob/main/1_screen.PNG)
 
 ## Функционал
 
@@ -37,7 +37,7 @@
     </template>
 ```
 
-2.
+2. Вызвать метод класса Progress и добавить компонент в HTML
 
 ```js
 const template = document.querySelector("#progress_template"); //Выбираем template
