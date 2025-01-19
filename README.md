@@ -37,7 +37,7 @@
     </template>
 ```
 
-2.
+2. Вызвать метод класса Progress и добавить компонент в HTML
 
 ```js
 const template = document.querySelector("#progress_template"); //Выбираем template
