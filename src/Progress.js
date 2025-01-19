@@ -27,17 +27,6 @@ class ProgressBar {
     }
   }
 
-  _validateInputValue(value) {
-    if (value > 100) {
-      console.log("Invalid value: max val 100");
-      return 100;
-    }
-    if (value < 0) {
-      console.log("Invalid value: min val 0");
-      return 0;
-    }
-  }
-
   generateBar() {
     this.bar = this.temp.querySelector(".progress-bar");
     this.hide = this.temp.querySelector(".input_hide");
