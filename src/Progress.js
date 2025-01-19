@@ -46,7 +46,6 @@ class ProgressBar {
     this.input.addEventListener("input", (e) => {
       e.target.value = numberValidation(e.target.value);
       this._debounceUpdateProgress(e.target.value, this.bar);
-      // this.debounceUpdateProgress(e.target.value, this.bar);
     });
     this.animate.addEventListener("change", () => {
       this.animate.checked

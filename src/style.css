@@ -1,5 +1,7 @@
 .bar {
   width: min-content;
+  display: flex;
+  gap: 50px;
 }
 
 .progress-bar {
@@ -19,7 +21,7 @@
 }
 
 .input_checkbox {
-  width: 30px;
+  width: 36px;
   height: 20px;
   opacity: 0;
   margin: 0;
@@ -28,7 +30,7 @@
 
 .slider {
   position: absolute;
-  width: 30px;
+  width: 32px;
   height: 20px;
   background: #ccc;
   border-radius: 12px;
@@ -77,13 +79,15 @@ input[type="number"] {
 }
 
 @media screen and (orientation: portrait) {
+  .bar {
+    flex-direction: column;
+  }
 }
 
 /* For landscape, we want the toolbar stick on the left */
 
 @media screen and (orientation: landscape) {
   .bar {
-    display: flex;
     flex-direction: row;
   }
 }
